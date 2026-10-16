@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 340" role="img" aria-hidden="true" focusable="false">
+  <!-- líneas de movimiento -->
+  <g stroke="#000" stroke-width="6" stroke-linecap="round" opacity="0.9">
+    <path d="M18 84 H96"/>
+    <path d="M6 132 H78"/>
+    <path d="M28 178 H92"/>
+  </g>
+  <g transform="rotate(-7 240 175)">
+    <!-- punta doblada (cerrada) -->
+    <path d="M372 118 Q424 128 430 172 Q424 218 372 228 L352 200 L352 146 Z" fill="#F2F2F2" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+    <!-- cuerpo del wrap -->
+    <path d="M128 112 C 220 78 320 88 378 132 L 378 216 C 320 262 220 272 128 246 C 92 236 84 128 128 112 Z" fill="#FFFFFF" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+    <!-- líneas de la tortilla -->
+    <path d="M160 104 C 150 160 150 210 162 252" fill="none" stroke="#000" stroke-width="3" opacity="0.35"/>
+    <path d="M210 92 C 200 160 200 220 214 262" fill="none" stroke="#000" stroke-width="3" opacity="0.35"/>
+    <path d="M268 90 C 258 160 258 226 272 260" fill="none" stroke="#000" stroke-width="3" opacity="0.35"/>
+    <path d="M322 100 C 314 160 314 224 326 250" fill="none" stroke="#000" stroke-width="3" opacity="0.35"/>
+    <!-- extremo abierto -->
+    <ellipse cx="116" cy="178" rx="52" ry="72" fill="#F7E7C8" stroke="#000" stroke-width="7"/>
+    <ellipse cx="116" cy="178" rx="36" ry="54" fill="#F2C14E" stroke="#000" stroke-width="4"/>
+    <!-- relleno -->
+    <g stroke="#000" stroke-width="3" stroke-linecap="round">
+      <circle cx="102" cy="150" r="4" fill="#FFF3D6"/>
+      <circle cx="126" cy="142" r="4" fill="#FFF3D6"/>
+      <circle cx="136" cy="166" r="4" fill="#FFF3D6"/>
+      <circle cx="98" cy="182" r="4" fill="#FFF3D6"/>
+      <circle cx="124" cy="196" r="4" fill="#FFF3D6"/>
+      <circle cx="108" cy="212" r="4" fill="#FFF3D6"/>
+      <circle cx="134" cy="216" r="4" fill="#FFF3D6"/>
+    </g>
+    <path d="M96 164 q10 -8 20 0" fill="none" stroke="#8B4A2B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M112 188 q10 -8 20 0" fill="none" stroke="#8B4A2B" stroke-width="6" stroke-linecap="round"/>
+    <rect x="118" y="156" width="12" height="12" fill="#F04444" stroke="#000" stroke-width="3" transform="rotate(18 124 162)"/>
+    <rect x="98" y="198" width="11" height="11" fill="#5B8C3E" stroke="#000" stroke-width="3" transform="rotate(-12 103 203)"/>
+  </g>
+</svg>
