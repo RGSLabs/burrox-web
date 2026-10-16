@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BURROX — Demo comercial independiente. Explora el menú de burritos, ensaladas, quesadillas y empanadas. Plaza La Cima, Veracruz." />
+  <title>BURROX · El antojo tiene nombre — Demo comercial</title>
+
+  <!-- Fuentes: Bangers (titulares) + sans-serif del sistema como alternativa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="img/logo/burrox-logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#menu">Saltar al contenido principal</a>
+
+  <!-- ============ SECCIÓN 1 · HEADER Y NAVEGACIÓN ============ -->
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="BURROX — Ir al inicio">
+        <img src="img/logo/burrox-logo.png" alt="BURROX" class="brand-logo" width="150" height="46" />
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#menu">Menú</a></li>
+          <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" id="cart-open" aria-label="Abrir carrito de pedido">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/>
+          <path d="M3 4h2l2.6 11.2a1.5 1.5 0 0 0 1.5 1.1h7.9a1.5 1.5 0 0 0 1.5-1.2L20 8H6"/>
+        </svg>
+        <span class="cart-btn-label">Pedido</span>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ SECCIÓN 2 · HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-halftone" aria-hidden="true"></div>
+      <img src="img/illustrations/burrito-hero.svg" alt="" class="hero-burrito" aria-hidden="true" />
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker comic-tag">Plaza La Cima · Veracruz</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-brand">BURROX</span>
+            <span class="hero-slogan">EL ANTOJO TIENE <em>NOMBRE.</em></span>
+          </h1>
+          <p class="hero-sub">Explora nuestro menú y descubre tu próximo antojo.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              EXPLORAR MENÚ
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#ubicacion" class="btn btn-ghost">
+              ENCUÉNTRANOS
+              <span class="btn-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <figure class="hero-photo comic-frame">
+            <img src="img/food/burrito-1.jpg" alt="Fotografía ilustrativa de burritos cortados a la mitad sobre tabla de madera" width="540" height="360" />
+            <figcaption class="photo-caption">Fotografía ilustrativa</figcaption>
+          </figure>
+          <img src="img/illustrations/motion-lines.svg" alt="" class="hero-motion" aria-hidden="true" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cinta decorativa tipo cómic -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>BURRITOS ★ ENSALADAS ★ QUESADILLAS ★ EMPANADAS ★ </span>
+        <span>BURRITOS ★ ENSALADAS ★ QUESADILLAS ★ EMPANADAS ★ </span>
+      </div>
+    </div>
+
+    <!-- ============ SECCIÓN 3 · MENÚ ============ -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker comic-tag comic-tag--red">Catálogo</p>
+          <h2 class="section-title" id="menu-title">EL MENÚ</h2>
+          <p class="section-sub">Explora las opciones del menú BURROX.</p>
+        </header>
+
+        <div class="menu-filters reveal" id="menu-filters" role="group" aria-label="Filtrar productos del menú"></div>
+
+        <p class="menu-notice reveal" role="note">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><circle cx="12" cy="16.5" r="0.4" fill="currentColor"/></svg>
+          Precios y productos de referencia basados en información histórica. Disponibilidad, ingredientes y precios actuales pendientes de confirmación por BURROX.
+        </p>
+
+        <div class="menu-grid" id="menu-grid"></div>
+
+        <noscript>
+          <p class="menu-notice menu-notice--warn">
+            El catálogo interactivo requiere JavaScript. Actívalo para explorar el menú completo con filtros y carrito.
+          </p>
+        </noscript>
+      </div>
+      <img src="img/illustrations/burrito-mini.svg" alt="" class="section-deco section-deco--menu" aria-hidden="true" />
+    </section>
+
+    <!-- ============ SECCIÓN 5 · NOSOTROS ============ -->
+    <section class="section section--dark about-section" id="nosotros" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <p class="section-kicker comic-tag">Nosotros</p>
+          <h2 class="section-title" id="about-title">CONOCE BURROX</h2>
+          <p class="about-text">BURROX es un negocio de comida ubicado en Plaza La Cima, Veracruz. Descubre su propuesta y consulta su menú.</p>
+          <p class="about-note">Fotografías del local compartidas como referencia visual para esta demostración.</p>
+        </div>
+        <div class="about-gallery reveal">
+          <figure class="about-photo comic-frame">
+            <img src="img/backgrounds/burrox-fachada.jpg" alt="Fachada del local BURROX en Plaza La Cima" loading="lazy" width="677" height="313" />
+            <figcaption class="photo-caption">Fachada</figcaption>
+          </figure>
+          <figure class="about-photo comic-frame">
+            <img src="img/backgrounds/burrox-interior.jpg" alt="Interior del local BURROX con mostrador y mesas" loading="lazy" width="678" height="310" />
+            <figcaption class="photo-caption">Interior</figcaption>
+          </figure>
+          <figure class="about-photo comic-frame">
+            <img src="img/backgrounds/burrox-camioneta.jpg" alt="Camioneta de reparto de BURROX con ilustraciones de burritos" loading="lazy" width="520" height="1152" />
+            <figcaption class="photo-caption">Camioneta de reparto</figcaption>
+          </figure>
+        </div>
+      </div>
+      <img src="img/illustrations/burrito-mini.svg" alt="" class="section-deco section-deco--about" aria-hidden="true" />
+    </section>
+
+    <!-- ============ SECCIÓN 6 · UBICACIÓN Y CONTACTO ============ -->
+    <section class="section location-section" id="ubicacion" aria-labelledby="location-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker comic-tag comic-tag--red">Ubicación</p>
+          <h2 class="section-title" id="location-title">ENCUÉNTRANOS</h2>
+          <p class="section-sub">Visítanos en Plaza La Cima, Veracruz.</p>
+        </header>
+
+        <div class="location-grid">
+          <div class="map-card comic-frame reveal">
+            <iframe
+              id="map-iframe"
+              title="Mapa de BURROX en Plaza La Cima, Veracruz"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              src="about:blank"></iframe>
+          </div>
+
+          <div class="location-info reveal" id="contacto">
+            <div class="info-block comic-panel">
+              <h3 class="info-title">Dirección</h3>
+              <p class="info-text" id="info-address"></p>
+              <span class="status-badge status-badge--warn" id="address-badge">Dato histórico pendiente de confirmar</span>
+            </div>
+            <div class="info-block comic-panel">
+              <h3 class="info-title">Teléfono</h3>
+              <p class="info-text" id="info-phone"></p>
+              <span class="status-badge status-badge--warn" id="phone-badge">Dato histórico pendiente de confirmar</span>
+            </div>
+            <div class="info-block comic-panel">
+              <h3 class="info-title">Horario</h3>
+              <p class="info-text">Horarios pendientes de confirmación por el negocio.</p>
+            </div>
+            <a class="btn btn-primary btn-block" id="maps-link" href="#" target="_blank" rel="noopener noreferrer">
+              ABRIR EN GOOGLE MAPS
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ SECCIÓN 4 · CARRITO (panel lateral) ============ -->
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-head">
+      <h2 class="cart-title" id="cart-title">TU PEDIDO</h2>
+      <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <p class="cart-empty" id="cart-empty">Tu carrito está esperando algo delicioso.</p>
+      <ul class="cart-items" id="cart-items"></ul>
+    </div>
+
+    <div class="cart-foot">
+      <p class="cart-subtotal" id="cart-subtotal" aria-live="polite"></p>
+      <p class="cart-disclaimer">Esta demostración no envía pedidos ni confirma disponibilidad. El pedido deberá validarse directamente con el negocio.</p>
+      <div class="cart-actions">
+        <a href="#menu" class="btn btn-ghost btn-block" id="cart-continue">SEGUIR EXPLORANDO</a>
+        <button class="btn btn-primary btn-block" id="cart-whatsapp" disabled>CONTACTO DE PEDIDO PENDIENTE</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============ SECCIÓN 7 · FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo/burrox-logo.png" alt="BURROX" class="footer-logo" width="130" height="40" loading="lazy" />
+        <p class="footer-demo">Propuesta conceptual independiente desarrollada por RGS Labs Web Experiences. No es un sitio oficial de BURROX ni representa una contratación o aprobación por parte del negocio.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <h3 class="footer-title">Navegación</h3>
+        <ul>
+          <li><a class="footer-link" href="#inicio">Inicio</a></li>
+          <li><a class="footer-link" href="#menu">Menú</a></li>
+          <li><a class="footer-link" href="#nosotros">Nosotros</a></li>
+          <li><a class="footer-link" href="#ubicacion">Ubicación</a></li>
+          <li><a class="footer-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3 class="footer-title">Contacto</h3>
+        <p class="footer-text" id="footer-address"></p>
+        <p class="footer-text" id="footer-phone"></p>
+        <p class="footer-text footer-unverified">Datos comerciales pendientes de validación por BURROX.</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© <span id="footer-year"></span> Demo comercial independiente · RGS Labs Web Experiences</p>
+    </div>
+  </footer>
+
+  <!-- Datos y lógica -->
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
